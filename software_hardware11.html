@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en"> 
+  <head> 
+    <title>Software and Hardware</title> 
+  </head> 
+  <body> 
+    <h1>Software and Hardware</h1> 
+    
+    <div> 
+      <button onclick="showContent('software')">Software</button> 
+      <button onclick="showContent('hardware')">Hardware</button> 
+    </div> 
+
+    <div id="software" style="display: none;"> 
+      <h2>Software Components</h2> 
+      <div> 
+        <h3>Operating System (OS)</h3> 
+        <p>Controls hardware and software, giving essential services for programs.</p> 
+      </div> 
+      <div> 
+        <h3>Application Software</h3> 
+        <p>Programs like word processors and media players that you use daily.</p> 
+      </div> 
+      <div> 
+        <h3>Middleware</h3> 
+        <p>Software that connects different applications, allowing them to communicate.</p> 
+      </div> 
+      <div> 
+        <h3>Firmware</h3> 
+        <p>Built-in software that manages hardware functions.</p> 
+      </div> 
+    </div> 
+
+    <div id="hardware" style="display: none;"> 
+      <h2>Hardware Components</h2> 
+      <div> 
+        <h3>CPU (Central Processing Unit)</h3> 
+        <p>The brain of the computer that processes instructions.</p> 
+      </div> 
+      <div> 
+        <h3>Registers</h3> 
+        <p>Small memory units inside the CPU that temporarily hold data.</p> 
+      </div> 
+      <div> 
+        <h3>ALU (Arithmetic and Logic Unit)</h3> 
+        <p>Handles math and logic operations inside the CPU.</p> 
+      </div> 
+      <div> 
+        <h3>Control Unit</h3> 
+        <p>Manages data flow and coordinates CPU actions.</p> 
+      </div> 
+      <div> 
+        <h3>Buses</h3> 
+        <p>Wires that transfer data between components.</p> 
+      </div> 
+      <div> 
+        <h3>RAM (Memory)</h3> 
+        <p>Temporary storage for data the CPU is using right now.</p> 
+      </div> 
+      <div> 
+        <h3>Storage Devices</h3> 
+        <p>Stores data permanently, like hard drives and SSDs.</p> 
+      </div> 
+      <div> 
+        <h3>GPU (Graphics Processing Unit)</h3> 
+        <p>Renders images and video for the display.</p> 
+      </div> 
+      <div> 
+        <h3>Power Supply</h3> 
+        <p>Converts electricity from the wall to power your computer.</p> 
+      </div> 
+      <div> 
+        <h3>Motherboard</h3> 
+        <p>The main board connecting all parts of the computer.</p> 
+      </div> 
+    </div> 
+
+    <script>
+      function showContent(section) {
+          document.getElementById('software').style.display = 'none';
+          document.getElementById('hardware').style.display = 'none';
+          document.getElementById(section).style.display = 'block';
+      }
+    </script> 
+  
+</body></html>
